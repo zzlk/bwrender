@@ -1,0 +1,11 @@
+[package]
+name = "bwrender"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = { version = "*", features = ["png", "webp"] }
+rand = { version = "*" }
+anyhow = "*"
+tracing = "*"
+cached = "*"
