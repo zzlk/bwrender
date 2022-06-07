@@ -138,9 +138,5 @@ pub fn render(mtxm: &[u16], width: usize, height: usize, era: usize) -> Vec<u8> 
             .unwrap();
     }
 
-    // info!(
-    //     "rendering time: {}",
-    //     Instant::now().duration_since(start).as_micros()
-    // );
     png
 }
