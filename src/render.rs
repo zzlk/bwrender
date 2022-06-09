@@ -68,7 +68,8 @@ pub fn render(mtxm: &[u16], width: usize, height: usize, era: usize) -> Vec<u8> 
 
         for y in 0..height {
             for x in 0..width {
-                let mtxm_id = mtxm[x + y * width];
+                let offset = x + y * width;
+                let mtxm_id = if offset < mtxm.len() { mtxm[offset] } else { 0 };
 
                 let output_x = x * 32;
                 let output_y = y * 32;
