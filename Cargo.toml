@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 image = { version = "*", features = ["png", "webp"] }
-rand = { version = "*" }
-anyhow = "*"
+#rand = { version = "*" }
+#anyhow = "*"
 tracing = "*"
 cached = "*"
